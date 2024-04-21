@@ -1,0 +1,18 @@
+  
+
+.searchInput {
+  background-color:#ffffff;
+ border-top-left-radius: 7px;
+ border-bottom-left-radius: 7px;
+  width: 40vh;
+  border: #121212 .5px solid;
+}
+
+.search-btn{
+  background-color: #ffffff;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border: #121212 1px solid;
+}
