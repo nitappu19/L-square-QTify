@@ -14,7 +14,7 @@ return(
       <AppBar position="static">
       
         <Toolbar className='display'>
-        <a href="#"><img src={logo} alt="Qtigy" width="67px" /></a>
+        <img src={logo} alt="Qtigy" width="67px" />
           <SearchInput/>
           <Feedback/>
         </Toolbar>
