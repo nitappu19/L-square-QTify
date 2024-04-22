@@ -4,38 +4,5 @@
     align-items: center;
     background: rgba(52, 201, 75, 1);
 }
-.feed-btn{
-    background-color: #121212;
-    color: rgba(52, 201, 75, 1);
-    border-radius: 12px;
-    width: 170px;
-    height: 47px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
- }
-    
-
-.searchInput {
-  background-color:#ffffff;
- border-top-left-radius: 7px;
- border-bottom-left-radius: 7px;
-  width: 40vh;
-  border: #121212 .5px solid;
-}
-
-.searchButton {
- background-color:#ffffff;
-  border-top-right-radius: 7px;
- border-bottom-right-radius: 7px; 
- border: #121212 .5px solid;
- padding-bottom: 4px;
- padding-top: 8px;
- cursor: pointer;
-  
-}
-.searchButton:hover{
-  background-color: #ffffff;
-  border: #121212 solid 1px;
-}
+ 
 
