@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import SearchInput  from '../SearchInput/SearchInput';
 import '../NavBar/NavBar.css';
-import logo from '../../assets/logo.png'
+import Logo from '../Logo/Logo'
 import Feedback from '../FeedBack/Feedback';
 
 function NavBar(){
@@ -14,7 +14,7 @@ return(
       <AppBar position="static">
       
         <Toolbar className='display'>
-        <img src={logo} alt="Qtigy" width="67px" />
+          <Logo/>
           <SearchInput/>
           <Feedback/>
         </Toolbar>
