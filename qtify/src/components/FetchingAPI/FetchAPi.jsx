@@ -1,7 +1,7 @@
 import React from "react";
 import  { useState, useEffect } from 'react';
 import '../FetchingAPI/FetchAPI.css'
-import MusicCard from "../MusicCard/MusicCard";
+
 export default function FetchAPi(){
     const [albums, setAlbums] = useState([]);
     const [newSong, setnewSong] = useState([]);
@@ -43,28 +43,7 @@ export default function FetchAPi(){
   }, []);
 
   return (
-  //   <div className="songs">
-  //     <h1>Top Albums</h1>
-  //     {loading ? (
-  //     <p>loading</p>) :
-  //     (
-  //       <div>
-  //         <ul >
-  //         {albums.map(album => (
-  //           <li className="listed" key={album.id}>{album.title}</li>
-  //         ))}
-  //       </ul>
-  //       <h1>New Songs</h1>
-        
-  //       {newSong.map(Songs => ( 
-           
-  //           <MusicCard key={Songs.id} Songs = {Songs} />
-            
-  //         ))}
-        
-  //       </div>
-  //     ) }
-  // </div>\
+  
 
 
   <div>

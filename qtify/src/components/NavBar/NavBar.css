@@ -1,8 +1,10 @@
-.display{
-    display:flex;
-    justify-content: space-between;
+.navbar{
+    height: 74px;
+    background-color: #34C94B;
+    display: flex;
     align-items: center;
-    background: rgba(52, 201, 75, 1);
+    justify-content: space-between;
+    padding: 0px 32px 0px 32px;
 }
- 
+
 

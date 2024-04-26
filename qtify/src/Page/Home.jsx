@@ -1,11 +1,12 @@
-import NavBar from "../components/NavBar/navBar";
+import Navbar from '../components/Navbar/Navbar'
 import Hero from "../components/Hero/Hero";
 import Feedback from "../components/FeedBack/Feedback";
 import FAQs from "../components/FAQS/FAQS";
+
 function Header() {
     return (
       <>
-        <NavBar />
+        <Navbar />
         <Hero />
         <FAQs/>
       </>
