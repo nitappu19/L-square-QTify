@@ -1,33 +1,21 @@
-.hero{
-    width: 100%;
-    height: 270px;
-    background-color: #121212;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bannner{
+.heroBanner{
     width: 799px;
     height: 212px;
-    color: white;
+    margin-top: 80px;
+    color: #ffffff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 799px;
-    margin-top: 103px;
-    margin-left: 327px;
+    margin-left: 400px;
 
 }
+.heroCaption{
 
+}
+.heroImage{
+    height: 212px;
+    width:212px
+}
 .text{
     font-family: "Poppins";
     font-size: 32px;
     font-weight: 600;
-}
-
-.heroImage{
-    width: 212px;
-    height: 212px;
 }
