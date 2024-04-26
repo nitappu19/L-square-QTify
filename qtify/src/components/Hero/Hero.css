@@ -1,12 +1,29 @@
-.heroBanner{
+.hero{
+    width: 100%;
+    height: 270px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannner{
     width: 799px;
     height: 212px;
-    padding-top: 80px;
-    color: #ffffff;
+    color: white;
     display: flex;
-    padding-left: 327px;
-
+    align-items: center;
+    justify-content: center;
 }
-.heroCaption{
 
+.text{
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.heroImage{
+    width: 212px;
+    height: 212px;
 }

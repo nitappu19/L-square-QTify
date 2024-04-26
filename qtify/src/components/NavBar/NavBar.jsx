@@ -12,8 +12,7 @@ return(
     <>
    <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-      
-        <Toolbar className='display'>
+      <Toolbar className='display'>
           <Logo/>
           <SearchInput/>
           <Feedback/>

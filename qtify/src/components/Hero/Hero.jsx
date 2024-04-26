@@ -1,15 +1,27 @@
-import React from "react"
-import '../Hero/Hero.css'
-import heroBanner from '../../assets/hero_headphones.png'
-export default function Hero(){
-    return(
-       <>
-        <div className="heroBanner">
-        <h2 className="heroCaption">100 Thousand Songs,ad-free Over thousands podcast episodes Over thousands podcast episodes</h2>
-        
-        <img src={heroBanner} className="heroImage" alt="Hero-Banner" />
+import React from 'react';
+import '../Hero/Hero.css';
+import heroImg from "../../assets/hero_headphones.png";
+
+
+
+
+function Hero() {
+    return (
+      <>
+        <div className='hero'>
+        <div className='bannner'>
+            <div className='text'>
+                <p align="center">100 Thousand Songs, ad-free</p>
+                <p align="center">Over thousands podcast episodes</p>
+            </div>
+            <div className='image'>
+                <img src={heroImg} alt="hero" className='heroImage' />
+            </div>
         </div>
-    
-       </>
-       )
-}
+        </div>
+      </>
+    )
+  }
+  
+  export default Hero;
+  

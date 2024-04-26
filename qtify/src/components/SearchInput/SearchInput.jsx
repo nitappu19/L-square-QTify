@@ -4,12 +4,13 @@ import '../SearchInput/SearchInput.css'
 
 export default function SearchInput(){
     return(
-        
-        <div>
-         <input className='searchInput' placeholder='Search a song of your choice' />
-            <button className='search-btn'>
-                <img src={SearchIcon} alt="" />
+        <>
+        <div className='searchbox'>
+            <input type='text' className='search' placeholder='Search a album of your choice' />
+            <button  className='searchbutton'>
+                <img src={SearchIcon} alt='logo' className='searchLogo' />
             </button>
         </div>
+    </>
     )
 };
