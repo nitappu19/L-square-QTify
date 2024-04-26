@@ -1,0 +1,41 @@
+.searchbox{
+    width: 568px;
+    height: 52px;
+}
+.searchInput {
+    font-family: "Lato";
+    width: 80%;
+    height: 94%;
+    padding-left: 10px;
+    font-size: 16px;
+    border:1px black solid;
+    border-radius: 8px 0px 0px 8px;
+    
+  }
+  
+ 
+  .searchbutton{
+   
+    padding-bottom: 4px;
+    font-family: "Poppins";
+    color: #121212;
+    border:1px black solid;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    background-color: #ffffff;	 
+    border-top-right-radius: 7px;	 
+    border-bottom-right-radius: 7px;	 
+    width: 8%;
+    height: 100%;
+}
+
+
+
+.searchLogo{
+    width: 18px;
+    height: 15px;
+}
