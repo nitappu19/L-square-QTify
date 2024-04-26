@@ -1,12 +1,13 @@
-import './hero.css';
-import heroImg from "../../assets/hero_headphones.png";
 
+import heroImg from "../../assets/hero_headphones.png";
+import '../Hero/hero.css'
 
 
 function Hero() {
     return (
       <>
-      <div className='bannner'>
+       <div className='hero'>
+       <div className='bannner'>
           <div className='text'>
               <p align="center">100 Thousand Songs, ad-free</p>
               <p align="center">Over thousands podcast episodes</p>
@@ -15,6 +16,8 @@ function Hero() {
               <img src={heroImg} alt="hero" className='heroImage' />
           </div>
       </div>
+        </div>
+     
     </>
     )
   }
