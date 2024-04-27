@@ -10,7 +10,7 @@ export default function Navbar() {
         <nav className='navbar'>
           <Logo/>
           <SearchInput/>
-          <Button/>
+          <Button variant='dark'>Give Feedback</Button>
         </nav>
      </>
   );
