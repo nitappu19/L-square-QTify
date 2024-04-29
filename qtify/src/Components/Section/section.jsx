@@ -63,9 +63,7 @@ function Section({ title = 'Title', items = [], type = 'album', tabs: Tabs }) {
                     {items.map((item) => (
                         <SwiperSlide key={item.id}>
                              <Card
-                                title={item.title}
-                                image={item.image}
-                                chipText={type === 'song' ? `${item.likes} Likes` : `${item.follows} Follows`}
+                               key={item.id} album={item}
                             />
                         </SwiperSlide>
                     ))}
@@ -82,7 +80,7 @@ function Section({ title = 'Title', items = [], type = 'album', tabs: Tabs }) {
                 <Grid container rowSpacing={3}>
                     {items.map((item) => (
                         <Grid key={item.id} xs={6} sm={4} md={2.4} lg={1.7}>
-                            <Card title={item.title} image={item.image} follows={item.follows} />
+                           <Card key={item.id} album={item}/>
                         </Grid>
                     ))}
                 </Grid>

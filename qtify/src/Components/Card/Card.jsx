@@ -4,25 +4,30 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Chip } from '@mui/material';
+import {Tooltip} from '@mui/material';
+export default function Card({album}) {
 
-export default function Card({title , image , chipText}) {
-    console.log(chipText)
-    return (
+   return (
         <section>
+             <Tooltip
+    title={album.title}
+    placement="top"
+    arrow
+    display="flex"
+    justifyContent="center"
+>
             <MuiCard sx={{ width: 159, height: 205, borderRadius: '10px' }}>
                 <CardActionArea>
-                    <CardMedia component='img' height='170' image={image} alt={title} />
+                    <CardMedia component='img' height='170' image={album.image} alt={album.title} />
                     <CardContent
                         sx={{
                             display: 'flex',
-                            alignItems: 'center',
-                            height: 35,
-                            marginLeft: '0.5em',
-                            padding: 0,
-                            marginBottom: '0.2em',
-                        }}
-                    >
-                        <Chip
+                            paddingInline: '0.8em',
+                                }
+                            }
+                            label={album.follows}
+                        >
+                             <Chip
                             sx={{
                                 color:'white',
                                 height: 23,
@@ -33,7 +38,7 @@ export default function Card({title , image , chipText}) {
                                     paddingInline: '0.8em',
                                 },
                             }}
-                            label={chipText}
+                            label={album.follows}
                         />
                     </CardContent>
                 </CardActionArea>
@@ -41,18 +46,17 @@ export default function Card({title , image , chipText}) {
             <Typography
                 component='span'
                 sx={{
+                    color:'white',
                     fontSize: 13,
                     fontWeight: 300,
                     width: 159,
-                    display: 'inline-block',
-                    textOverflow: 'ellipsis',
-                    textWrap: 'nowrap',
-                    overflow: 'hidden',
+
                     marginTop: '0.5em',
                 }}
             >
-                {title}
+                {album.title}
             </Typography>
+            </Tooltip>
         </section>
     );
 }
