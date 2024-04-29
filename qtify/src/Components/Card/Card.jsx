@@ -5,15 +5,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Chip } from '@mui/material';
 
-
-export default function Card({album}) {
-   
-   return (
+export default function Card({title , image , chipText}) {
+    console.log(chipText)
+    return (
         <section>
-       
             <MuiCard sx={{ width: 159, height: 205, borderRadius: '10px' }}>
                 <CardActionArea>
-                    <CardMedia component='img' height='170' image={album.image} alt={album.title} />
+                    <CardMedia component='img' height='170' image={image} alt={title} />
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -35,7 +33,7 @@ export default function Card({album}) {
                                     paddingInline: '0.8em',
                                 },
                             }}
-                            label={album.follows}
+                            label={chipText}
                         />
                     </CardContent>
                 </CardActionArea>
@@ -43,7 +41,6 @@ export default function Card({album}) {
             <Typography
                 component='span'
                 sx={{
-                    color:'white',
                     fontSize: 13,
                     fontWeight: 300,
                     width: 159,
@@ -54,9 +51,8 @@ export default function Card({album}) {
                     marginTop: '0.5em',
                 }}
             >
-                {album.title}
+                {title}
             </Typography>
-           
         </section>
     );
 }

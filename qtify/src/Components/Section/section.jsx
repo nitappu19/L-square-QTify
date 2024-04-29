@@ -9,8 +9,7 @@ import style from './Section.module.css';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-function Section({ title = 'Title', items , type = 'album', tabs: Tabs }) {
-   console.log(items)
+function Section({ title = 'Title', items = [], type = 'album', tabs: Tabs }) {
     const theme = useTheme();
     const [collapse, setCollapse] = useState(true);
     return (
@@ -64,7 +63,9 @@ function Section({ title = 'Title', items , type = 'album', tabs: Tabs }) {
                     {items.map((item) => (
                         <SwiperSlide key={item.id}>
                              <Card
-                               key={item.id} album={item}
+                                title={item.title}
+                                image={item.image}
+                                chipText={type === 'song' ? `${item.likes} Likes` : `${item.follows} Follows`}
                             />
                         </SwiperSlide>
                     ))}
@@ -81,7 +82,7 @@ function Section({ title = 'Title', items , type = 'album', tabs: Tabs }) {
                 <Grid container rowSpacing={3}>
                     {items.map((item) => (
                         <Grid key={item.id} xs={6} sm={4} md={2.4} lg={1.7}>
-                            <Card key={item.id} album={item}/>
+                            <Card title={item.title} image={item.image} follows={item.follows} />
                         </Grid>
                     ))}
                 </Grid>
