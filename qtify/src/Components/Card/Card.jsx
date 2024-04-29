@@ -4,19 +4,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Chip } from '@mui/material';
-import {Tooltip} from '@mui/material';
+
 
 export default function Card({album}) {
    
    return (
         <section>
-             <Tooltip
-    title={album.title}
-    placement="top"
-    arrow
-    display="flex"
-    justifyContent="center"
->
+       
             <MuiCard sx={{ width: 159, height: 205, borderRadius: '10px' }}>
                 <CardActionArea>
                     <CardMedia component='img' height='170' image={album.image} alt={album.title} />
@@ -62,7 +56,7 @@ export default function Card({album}) {
             >
                 {album.title}
             </Typography>
-            </Tooltip>
+           
         </section>
     );
 }
